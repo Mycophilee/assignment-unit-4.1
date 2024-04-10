@@ -15,8 +15,9 @@ helloName();
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-  return 'Hello, (name)!';
+  return 'Hello + name';
 }
+helloName( "Emma")
 console.log('Hello, Emma!', helloName('Emma'));
 
 
@@ -41,6 +42,7 @@ console.log('result', result);
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
+let
 function isPositive(number) {
   if (number > 0) {
     return;
@@ -49,7 +51,7 @@ function isPositive(number) {
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-
+isPositive()
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
@@ -60,17 +62,7 @@ function getLast(array) {
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
-let green = ['tree', 'brush', 'lake'];
-function find(value, array) {
-  for (item of array){
-    if (item === value){
-      return true;
-    }
-  }
-}
-}
-// need to fix?
+
 
 // ----------------------
 // Stretch Goals
