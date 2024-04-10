@@ -10,27 +10,34 @@ function hello() {
 }
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
-
+helloName();
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-  return;
+  return 'Hello, (name)!';
 }
+console.log('Hello, Emma!', helloName('Emma'));
+
+
 // Remember to call the function to test
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
+function addNumbers(firstNumber, secondNumber) {
   // return firstNumber + secondNumber;
+ return firstNumber + secondNumber
 }
+addNumbers(24, 34)
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(x, y, z) {
+return x * y * z;
 }
+let result= multiplyThree(1,3,4);
 
+console.log('result', result);
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
@@ -54,8 +61,16 @@ function getLast(array) {
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+let green = ['tree', 'brush', 'lake'];
+function find(value, array) {
+  for (item of array){
+    if (item === value){
+      return true;
+    }
+  }
 }
+}
+// need to fix?
 
 // ----------------------
 // Stretch Goals
